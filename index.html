@@ -67,6 +67,33 @@
             gap: 14px;
         }
 
+        /* Специальная кнопка Telegram */
+        .btn.tg {
+            flex-direction: column;
+            align-items: stretch;
+            padding: 18px;
+            gap: 14px;
+        }
+
+        .btn.tg .icon {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            border-radius: 18px;
+        }
+
+        .btn.tg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .btn.tg .content {
+            align-items: center;
+            text-align: center;
+        }
+
         .btn {
             display: flex;
             align-items: center;
@@ -87,9 +114,9 @@
         }
 
         .icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 12px;
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
             display: grid;
             place-items: center;
             font-weight: 800;
@@ -127,27 +154,37 @@
         <p class="subtitle">Выберите удобный способ связи</p>
 
         <div class="contacts">
-            <a class="btn" href="https://t.me/USERNAME" target="_blank">
-                <div class="icon">TG</div>
+            <a class="btn tg" href="https://t.me/Sapskerly" target="_blank">
+                <div class="icon">
+                    <img src="telega.jpg" alt="Telegram QR" style="width:100%;height:100%;border-radius:8px;object-fit:cover;" />
+                </div>
                 <div class="content">
                     <div class="label">Telegram</div>
                     <div class="hint">Написать в личные сообщения</div>
                 </div>
             </a>
 
-            <a class="btn" href="mailto:mail@example.com">
+            <!--a class="btn" href="mailto:mail@example.com">
                 <div class="icon">@</div>
                 <div class="content">
                     <div class="label">Email</div>
                     <div class="hint">mail@example.com</div>
                 </div>
-            </a>
+            </a-->
 
-            <a class="btn" href="https://wa.me/79990000000" target="_blank">
+            <!-- a class="btn" href="https://wa.me/79990000000" target="_blank">
                 <div class="icon">WA</div>
                 <div class="content">
                     <div class="label">WhatsApp</div>
                     <div class="hint">Чат без звонков</div>
+                </div>
+            </a-->
+
+            <a class="btn" href="https://Vk.com/sapskerly" target="_blank">
+                <div class="icon">VK</div>
+                <div class="content">
+                    <div class="label">vk.com</div>
+                    <div class="hint">Сообщение</div>
                 </div>
             </a>
         </div>
